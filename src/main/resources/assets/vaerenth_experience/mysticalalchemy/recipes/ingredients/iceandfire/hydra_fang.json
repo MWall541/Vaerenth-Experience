@@ -1,0 +1,22 @@
+{
+	"type": "mysticalchemy:potion_ingredient",
+	"item": "iceandfire:hydra_fang",
+	"effects": [
+		{
+			"effect": "minecraft:saturation",
+			"strength": 0.4
+		},
+		{
+			"effect": "minecraft:regeneration",
+			"strength": 0.2
+		},
+		{
+			"effect": "minecraft:poison",
+			"strength": 0.4
+		},
+		{
+			"effect": "minecraft:weakness",
+			"strength": 0.2
+		}
+	]
+}

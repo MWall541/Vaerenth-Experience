@@ -1,0 +1,10 @@
+{
+  "title": {
+    "text": "ADVICE",
+    "bold": true,
+    "color": "blue"
+  },
+  "tip": {
+    "text": "When a tool breaks on your hotbar, it will be restocked by other items of the same type taken from your inventory."
+  }
+}

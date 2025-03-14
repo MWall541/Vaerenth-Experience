@@ -1,0 +1,22 @@
+{
+	"type": "mysticalchemy:potion_ingredient",
+	"item": "iceandfire:stymphalian_bird_feather",
+	"effects": [
+		{
+			"effect": "minecraft:unluck",
+			"strength": 0.4
+		},
+		{
+			"effect": "magistuarmory:laceration",
+			"strength": 0.2
+		},
+		{
+			"effect": "minecraft:jump_boost",
+			"strength": 0.4
+		},
+		{
+			"effect": "tetra:howling",
+			"strength": 0.2
+		}
+	]
+}

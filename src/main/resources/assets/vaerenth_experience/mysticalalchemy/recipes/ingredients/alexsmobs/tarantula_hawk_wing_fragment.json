@@ -1,0 +1,22 @@
+{
+	"type": "mysticalchemy:potion_ingredient",
+	"item": "alexsmobs:tarantula_hawk_wing_fragment",
+	"effects": [
+		{
+			"effect": "minecraft:regeneration",
+			"strength": 0.4
+		},
+		{
+			"effect": "minecraft:jump_boost",
+			"strength": 0.2
+		},
+		{
+			"effect": "alexsmobs:debilitating_sting",
+			"strength": 0.4
+		},
+		{
+			"effect": "minecraft:poison",
+			"strength": 0.2
+		}
+	]
+}

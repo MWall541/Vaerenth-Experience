@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0" : "vaerenth_experience:item/greyelf_shortsword"
+  }
+}

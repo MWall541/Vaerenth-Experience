@@ -1,0 +1,22 @@
+{
+	"type": "mysticalchemy:potion_ingredient",
+	"item": "alexsmobs:kangaroo_hide",
+	"effects": [
+		{
+			"effect": "minecraft:jump_boost",
+			"strength": 0.4
+		},
+		{
+			"effect": "autumnity:foul_taste",
+			"strength": 0.2
+		},
+		{
+			"effect": "minecraft:hunger",
+			"strength": 0.4
+		},
+		{
+			"effect": "minecraft:weakness",
+			"strength": 0.2
+		}
+	]
+}

@@ -1,0 +1,11 @@
+{
+	"type": "mysticalchemy:potion_ingredient",
+	"item": "irons_spellbooks:cinder_essence",
+	"effects": [
+		{
+			"effect": "minecraft:instant_damage",
+			"strength": 1
+		}
+	]
+	"duration_added": 600
+}

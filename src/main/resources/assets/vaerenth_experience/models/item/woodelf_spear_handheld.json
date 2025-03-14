@@ -1,0 +1,6 @@
+{
+	"parent": "dixtas_armory:item/spear",
+	"textures": {
+		"layer0" : "vaerenth_experience:item/woodelf_spear_handheld"
+	}
+}

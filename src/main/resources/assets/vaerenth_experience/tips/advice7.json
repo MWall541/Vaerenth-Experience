@@ -1,0 +1,10 @@
+{
+  "title": {
+    "text": "ADVICE",
+    "bold": true,
+    "color": "blue"
+  },
+  "tip": {
+    "text": "Some enemies will spawn with powerful abilities. They are far stronger than normal, but will always drop something worthwhile."
+  }
+}

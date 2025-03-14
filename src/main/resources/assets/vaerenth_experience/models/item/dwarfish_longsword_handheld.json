@@ -1,0 +1,6 @@
+{
+	"parent": "dixtas_armory:item/handheld_2x",
+	"textures": {
+		"layer0" : "vaerenth_experience:item/dwarfish_longsword_handheld"
+	}
+}

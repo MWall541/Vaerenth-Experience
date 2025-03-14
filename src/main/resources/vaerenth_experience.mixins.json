@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "minVersion": "0.8.5",
+  "package": "io.github.mwall5410.vaerenth_experience.mixins",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "vaerenth_experience.refmap.json",
+  "mixins": [
+  ],
+  "client": [
+  ]
+}

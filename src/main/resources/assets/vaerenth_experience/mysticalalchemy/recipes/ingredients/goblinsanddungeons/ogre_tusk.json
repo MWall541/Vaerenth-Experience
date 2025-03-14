@@ -1,0 +1,22 @@
+{
+	"type": "mysticalchemy:potion_ingredient",
+	"item": "goblinsanddungeons:ogre_tusk",
+	"effects": [
+		{
+			"effect": "minecraft:hunger",
+			"strength": 0.4
+		},
+		{
+			"effect": "cofh_core:clarity",
+			"strength": 0.2
+		},
+		{
+			"effect": "goblinsanddungeons:might",
+			"strength": 0.4
+		},
+		{
+			"effect": "minecraft:slowness",
+			"strength": 0.2
+		}
+	]
+}

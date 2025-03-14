@@ -1,0 +1,22 @@
+{
+	"type": "mysticalchemy:potion_ingredient",
+	"item": "alexsmobs:spiked_turtle_shell",
+	"effects": [
+		{
+			"effect": "quark:resilience",
+			"strength": 0.4
+		},
+		{
+			"effect": "minecraft:night_vision",
+			"strength": 0.2
+		},
+		{
+			"effect": "minecraft:instant_damage",
+			"strength": 0.4
+		},
+		{
+			"effect": "tetra:earthbound",
+			"strength": 0.2
+		}
+	]
+}

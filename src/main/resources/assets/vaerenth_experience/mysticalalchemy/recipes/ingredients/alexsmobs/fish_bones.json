@@ -1,0 +1,22 @@
+{
+	"type": "mysticalchemy:potion_ingredient",
+	"item": "alexsmobs:fish_bones",
+	"effects": [
+		{
+			"effect": "minecraft:luck",
+			"strength": 0.4
+		},
+		{
+			"effect": "minecraft:water_breathing",
+			"strength": 0.2
+		},
+		{
+			"effect": "minecraft:blindness",
+			"strength": 0.4
+		},
+		{
+			"effect": "cofh_core:sundered",
+			"strength": 0.2
+		}
+	]
+}

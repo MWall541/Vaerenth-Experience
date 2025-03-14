@@ -1,0 +1,6 @@
+{
+	"parent": "dixtas_armory:item/handheld_pole_2x",
+	"textures": {
+		"layer0" : "vaerenth_experience:item/goblin_glaive_handheld"
+	}
+}

@@ -1,0 +1,6 @@
+{
+	"parent": "dixtas_armory:item/handheld_4x",
+	"textures": {
+		"layer0": "vaerenth_experience:item/greyelf_zweihander_handheld"
+	}
+}

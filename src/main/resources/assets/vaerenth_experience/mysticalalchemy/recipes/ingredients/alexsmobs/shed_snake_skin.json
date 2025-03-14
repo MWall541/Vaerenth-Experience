@@ -1,0 +1,22 @@
+{
+	"type": "mysticalchemy:potion_ingredient",
+	"item": "alexsmobs:shed_snake_skin",
+	"effects": [
+		{
+			"effect": "minecraft:invisibility",
+			"strength": 0.4
+		},
+		{
+			"effect": "alexsmobs:poison_resistance",
+			"strength": 0.2
+		},
+		{
+			"effect": "minecraft:poison",
+			"strength": 0.4
+		},
+		{
+			"effect": "minecraft:unluck",
+			"strength": 0.2
+		}
+	]
+}

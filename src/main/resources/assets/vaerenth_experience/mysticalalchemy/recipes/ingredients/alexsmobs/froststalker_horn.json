@@ -1,0 +1,22 @@
+{
+	"type": "mysticalchemy:potion_ingredient",
+	"item": "alexsmobs:froststalker_horn",
+	"effects": [
+		{
+			"effect": "cofh_core:chilled",
+			"strength": 0.5
+		},
+		{
+			"effect": "minecraft:strength",
+			"strength": 0.3
+		},
+		{
+			"effect": "minecraft:weakness",
+			"strength": 0.5
+		},
+		{
+			"effect": "minecraft:speed",
+			"strength": 0.3
+		}
+	]
+}

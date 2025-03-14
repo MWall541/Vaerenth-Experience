@@ -1,0 +1,22 @@
+{
+	"type": "mysticalchemy:potion_ingredient",
+	"item": "iceandfire:ice_lily",
+	"effects": [
+		{
+			"effect": "minecraft:instant_health",
+			"strength": 0.4
+		},
+		{
+			"effect": "quark:resilience",
+			"strength": 0.2
+		},
+		{
+			"effect": "minecraft:weakness",
+			"strength": 0.4
+		},
+		{
+			"effect": "cofh_core:chilled",
+			"strength": 0.4
+		}
+	]
+}

@@ -1,0 +1,22 @@
+{
+	"type": "mysticalchemy:potion_ingredient",
+	"item": "alexsmobs:rocky_shell",
+	"effects": [
+		{
+			"effect": "quark:resilience",
+			"strength": 0.5
+		},
+		{
+			"effect": "goblinsanddungeons:might",
+			"strength": 0.3
+		},
+		{
+			"effect": "minecraft:slowness",
+			"strength": 0.5
+		},
+		{
+			"effect": "minecraft:resistance",
+			"strength": 0.3
+		}
+	]
+}

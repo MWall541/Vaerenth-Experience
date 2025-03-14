@@ -1,0 +1,54 @@
+{
+	"type": "mysticalchemy:potion_ingredient",
+	"item": "alexsmobs:mimicream",
+	"effects": [
+		{
+			"effect": "quark:resilience",
+			"strength": 0.3
+		},
+		{
+			"effect": "goblinsanddungeons:might",
+			"strength": 0.3
+		},
+		{
+			"effect": "minecraft:slowness",
+			"strength": 0.3
+		},
+		{
+			"effect": "minecraft:strength",
+			"strength": 0.3
+		},
+		{
+			"effect": "minecraft:weakness",
+			"strength": 0.3
+		},
+		{
+			"effect": "minecraft:luck",
+			"strength": 0.3
+		},
+		{
+			"effect": "minecraft:unluck",
+			"strength": 0.3
+		},
+		{
+			"effect": "minecraft:poison",
+			"strength": 0.3
+		},
+		{
+			"effect": "minecraft:regeneration",
+			"strength": 0.3
+		},
+		{
+			"effect": "minecraft:slowness",
+			"strength": 0.3
+		},
+		{
+			"effect": "minecraft:wither",
+			"strength": 0.3
+		},
+		{
+			"effect": "minecraft:resistance",
+			"strength": 0.3
+		}
+	]
+}

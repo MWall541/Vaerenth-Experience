@@ -1,0 +1,22 @@
+{
+	"type": "mysticalchemy:potion_ingredient",
+	"item": "alexsmobs:banana",
+	"effects": [
+		{
+			"effect": "minecraft:absorption",
+			"strength": 0.5
+		},
+		{
+			"effect": "alexsmobs:clinging",
+			"strength": 0.3
+		},
+		{
+			"effect": "brewinandchewin:tipsy",
+			"strength": 0.5
+		},
+		{
+			"effect": "cofh_core:wrenched",
+			"strength": 0.3
+		}
+	]
+}

@@ -1,0 +1,14 @@
+{
+	"type": "mysticalchemy:potion_ingredient",
+	"item": "alexsmobs:poison_bottle",
+	"effects": [
+		{
+			"effect": "minecraft:poison",
+			"strength": 0.8
+		},
+		{
+			"effect": "cofh_core:sundered",
+			"strength": 0.6
+		}
+	]
+}

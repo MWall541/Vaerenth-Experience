@@ -1,0 +1,22 @@
+{
+	"type": "mysticalchemy:potion_ingredient",
+	"item": "iceandfire:wither_shard",
+	"effects": [
+		{
+			"effect": "alexsmobs:soulsteal",
+			"strength": 0.4
+		},
+		{
+			"effect": "minecraft:speed",
+			"strength": 0.2
+		},
+		{
+			"effect": "minecraft:wither",
+			"strength": 0.4
+		},
+		{
+			"effect": "minecraft:unluck",
+			"strength": 0.2
+		}
+	]
+}

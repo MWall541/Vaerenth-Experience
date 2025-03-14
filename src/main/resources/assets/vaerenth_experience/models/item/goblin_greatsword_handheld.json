@@ -1,0 +1,6 @@
+{
+	"parent": "dixtas_armory:item/greatsword",
+	"textures": {
+		"layer0" : "vaerenth_experience:item/goblin_greatsword_handheld"
+	}
+}

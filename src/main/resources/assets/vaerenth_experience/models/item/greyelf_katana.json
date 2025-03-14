@@ -1,0 +1,24 @@
+{
+  "parent": "minecraft:item/handheld",
+  "loader": "forge:separate_transforms",
+  "textures": {
+    "layer0": "vaerenth_experience:item/greyelf_katana_gui"
+  },
+  "base": {
+    "parent": "vaerenth_experience:item/greyelf_katana_gui"
+  },
+  "perspectives": {
+    "thirdperson_righthand": {
+      "parent": "vaerenth_experience:item/greyelf_katana_handheld"
+    },
+    "thirdperson_lefthand": {
+      "parent": "vaerenth_experience:item/greyelf_katana_handheld"
+    },
+    "firstperson_righthand": {
+      "parent": "vaerenth_experience:item/greyelf_katana_handheld"
+    },
+    "firstperson_lefthand": {
+      "parent": "vaerenth_experience:item/greyelf_katana_handheld"
+    }
+  }
+}

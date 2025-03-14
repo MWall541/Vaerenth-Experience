@@ -1,0 +1,10 @@
+{
+  "title": {
+    "text": "ADVICE",
+    "bold": true,
+    "color": "blue"
+  },
+  "tip": {
+    "text": "A grindstone can remove the enchantments from your weapons, but not curses."
+  }
+}

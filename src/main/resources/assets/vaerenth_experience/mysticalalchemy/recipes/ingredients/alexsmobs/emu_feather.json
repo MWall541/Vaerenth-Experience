@@ -1,0 +1,22 @@
+{
+	"type": "mysticalchemy:potion_ingredient",
+	"item": "alexsmobs:emu_feather",
+	"effects": [
+		{
+			"effect": "minecraft:speed",
+			"strength": 0.4
+		},
+		{
+			"effect": "minecraft:instant_health",
+			"strength": 0.2
+		},
+		{
+			"effect": "tetra:punctured",
+			"strength": 0.4
+		},
+		{
+			"effect": "cofh_core:sundered",
+			"strength": 0.2
+		}
+	]
+}

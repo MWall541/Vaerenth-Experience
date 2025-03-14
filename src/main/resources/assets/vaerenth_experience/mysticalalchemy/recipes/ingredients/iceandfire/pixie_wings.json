@@ -1,0 +1,22 @@
+{
+	"type": "mysticalchemy:potion_ingredient",
+	"item": "iceandfire:pixie_wings",
+	"effects": [
+		{
+			"effect": "alexsmobs:fleet_footed",
+			"strength": 0.4
+		},
+		{
+			"effect": "minecraft:glowing",
+			"strength": 0.2
+		},
+		{
+			"effect": "alexsmobs:sunbird_curse",
+			"strength": 0.4
+		},
+		{
+			"effect": "minecraft:hunger",
+			"strength": 0.2
+		}
+	]
+}

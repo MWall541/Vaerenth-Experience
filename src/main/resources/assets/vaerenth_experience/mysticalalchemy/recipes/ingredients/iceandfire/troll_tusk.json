@@ -1,0 +1,22 @@
+{
+	"type": "mysticalchemy:potion_ingredient",
+	"item": "iceandfire:troll_tusk",
+	"effects": [
+		{
+			"effect": "minecraft:night_vision",
+			"strength": 0.4
+		},
+		{
+			"effect": "minecraft:weakness",
+			"strength": 0.2
+		},
+		{
+			"effect": "minecraft:strength",
+			"strength": 0.4
+		},
+		{
+			"effect": "tetra:howling",
+			"strength": 0.2
+		}
+	]
+}

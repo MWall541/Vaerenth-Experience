@@ -1,0 +1,22 @@
+{
+	"type": "mysticalchemy:potion_ingredient",
+	"item": "iceandfire:death_worm_tounge",
+	"effects": [
+		{
+			"effect": "autumnity:foul_taste",
+			"strength": 0.4
+		},
+		{
+			"effect": "magistuarmory:laceration",
+			"strength": 0.2
+		},
+		{
+			"effect": "minecraft:absorption",
+			"strength": 0.4
+		},
+		{
+			"effect": "minecraft:speed",
+			"strength": 0.2
+		}
+	]
+}

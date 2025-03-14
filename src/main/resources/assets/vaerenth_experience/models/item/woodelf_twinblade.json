@@ -1,0 +1,24 @@
+{
+  "parent": "minecraft:item/handheld",
+  "loader": "forge:separate_transforms",
+  "textures": {
+    "layer0": "vaerenth_experience:item/woodelf_twinblade_gui"
+  },
+  "base": {
+    "parent": "vaerenth_experience:item/woodelf_twinblade_gui"
+  },
+  "perspectives": {
+    "thirdperson_righthand": {
+      "parent": "vaerenth_experience:item/woodelf_twinblade_handheld"
+    },
+    "thirdperson_lefthand": {
+      "parent": "vaerenth_experience:item/woodelf_twinblade_handheld"
+    },
+    "firstperson_righthand": {
+      "parent": "vaerenth_experience:item/woodelf_twinblade_handheld"
+    },
+    "firstperson_lefthand": {
+      "parent": "vaerenth_experience:item/woodelf_twinblade_handheld"
+    }
+  }
+}

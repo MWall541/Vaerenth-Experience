@@ -1,0 +1,22 @@
+{
+	"type": "mysticalchemy:potion_ingredient",
+	"item": "alexsmobs:shark_tooth",
+	"effects": [
+		{
+			"effect": "quark:resilience",
+			"strength": 0.5
+		},
+		{
+			"effect": "minecraft:water_breathing",
+			"strength": 0.3
+		},
+		{
+			"effect": "minecraft:hunger",
+			"strength": 0.5
+		},
+		{
+			"effect": "alexsmobs:exsanguination",
+			"strength": 0.3
+		}
+	]
+}

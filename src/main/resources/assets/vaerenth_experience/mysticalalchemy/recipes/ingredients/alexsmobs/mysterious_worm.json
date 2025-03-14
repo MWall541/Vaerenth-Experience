@@ -1,0 +1,22 @@
+{
+	"type": "mysticalchemy:potion_ingredient",
+	"item": "alexsmobs:mysterious_worm",
+	"effects": [
+		{
+			"effect": "alexsmobs:bug_pheromones",
+			"strength": 0.6
+		},
+		{
+			"effect": "minecraft:instant_health",
+			"strength": 0.4
+		},
+		{
+			"effect": "minecraft:weakness",
+			"strength": 0.6
+		},
+		{
+			"effect": "minecraft:slowness",
+			"strength": 0.4
+		}
+	]
+}

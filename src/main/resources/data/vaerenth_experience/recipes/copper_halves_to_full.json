@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "coins",
+  "ingredients": [
+    {
+      "item": "vaerenth_experience:copper_halfglass"
+    },
+    {
+      "item": "vaerenth_experience:copper_halfglass"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "item": "vaerenth_experience:copper_glass"
+  }
+}

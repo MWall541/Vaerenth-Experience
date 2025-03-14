@@ -1,0 +1,22 @@
+{
+	"type": "mysticalchemy:potion_ingredient",
+	"item": "iceandfire:rotten_egg",
+	"effects": [
+		{
+			"effect": "minecraft:hunger",
+			"strength": 0.4
+		},
+		{
+			"effect": "minecraft:weakness",
+			"strength": 0.2
+		},
+		{
+			"effect": "cofh_core:clarity",
+			"strength": 0.4
+		},
+		{
+			"effect": "minecraft:luck",
+			"strength": 0.2
+		}
+	]
+}

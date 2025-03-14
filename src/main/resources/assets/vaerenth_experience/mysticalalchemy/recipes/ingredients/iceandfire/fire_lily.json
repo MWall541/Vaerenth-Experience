@@ -1,0 +1,22 @@
+{
+	"type": "mysticalchemy:potion_ingredient",
+	"item": "iceandfire:fire_lily",
+	"effects": [
+		{
+			"effect": "minecraft:instant_health",
+			"strength": 0.4
+		},
+		{
+			"effect": "minecraft:saturation",
+			"strength": 0.2
+		},
+		{
+			"effect": "minecraft:weakness",
+			"strength": 0.4
+		},
+		{
+			"effect": "minecraft:hunger",
+			"strength": 0.2
+		}
+	]
+}

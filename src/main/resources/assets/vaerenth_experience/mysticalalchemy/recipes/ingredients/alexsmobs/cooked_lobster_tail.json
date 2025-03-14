@@ -1,0 +1,22 @@
+{
+	"type": "mysticalchemy:potion_ingredient",
+	"item": "alexsmobs:cooked_lobster_tail",
+	"effects": [
+		{
+			"effect": "minecraft:absorption",
+			"strength": 0.5
+		},
+		{
+			"effect": "minecraft:water_breathing",
+			"strength": 0.3
+		},
+		{
+			"effect": "minecraft:weakness",
+			"strength": 0.5
+		},
+		{
+			"effect": "minecraft:poison",
+			"strength": 0.3
+		}
+	]
+}

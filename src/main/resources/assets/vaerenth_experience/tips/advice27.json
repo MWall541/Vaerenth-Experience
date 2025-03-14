@@ -1,0 +1,10 @@
+{
+  "title": {
+    "text": "ADVICE",
+    "bold": true,
+    "color": "blue"
+  },
+  "tip": {
+    "text": "Halberds, Zweihanders, and Glaives all have excellent range and damage output, but are considerably slow."
+  }
+}

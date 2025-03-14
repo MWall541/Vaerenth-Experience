@@ -1,0 +1,22 @@
+{
+	"type": "mysticalchemy:potion_ingredient",
+	"item": "alexsmobs:gazelle_horn",
+	"effects": [
+		{
+			"effect": "minecraft:speed",
+			"strength": 0.5
+		},
+		{
+			"effect": "minecraft:jump_boost",
+			"strength": 0.3
+		},
+		{
+			"effect": "supplementaries:overencumbered",
+			"strength": 0.5
+		},
+		{
+			"effect": "cofh_core:shocked",
+			"strength": 0.3
+		}
+	]
+}

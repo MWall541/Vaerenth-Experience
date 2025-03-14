@@ -1,0 +1,22 @@
+{
+	"type": "mysticalchemy:potion_ingredient",
+	"item": "irons_spellbooks:blood_vial",
+	"effects": [
+		{
+			"effect": "minecraft:hunger",
+			"strength": 0.4
+		},
+		{
+			"effect": "minecraft:poison",
+			"strength": 0.2
+		},
+		{
+			"effect": "minecraft:luck",
+			"strength": 0.4
+		},
+		{
+			"effect": "minecraft:speed",
+			"strength": 0.2
+		}
+	]
+}

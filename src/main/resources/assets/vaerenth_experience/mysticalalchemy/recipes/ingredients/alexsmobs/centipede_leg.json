@@ -1,0 +1,26 @@
+{
+	"type": "mysticalchemy:potion_ingredient",
+	"item": "alexsmobs:centipede_leg",
+	"effects": [
+		{
+			"effect": "alexsmobs:clinging",
+			"strength": 0.5
+		},
+		{
+			"effect": "minecraft:night_vision",
+			"strength": 0.3
+		},
+		{
+			"effect": "alexsmobs:poison_resistance",
+			"strength": 0.3
+		},
+		{
+			"effect": "alexsmobs:debilitating_sting",
+			"strength": 0.5
+		},
+		{
+			"effect": "minecraft:poison",
+			"strength": 0.3
+		}
+	]
+}

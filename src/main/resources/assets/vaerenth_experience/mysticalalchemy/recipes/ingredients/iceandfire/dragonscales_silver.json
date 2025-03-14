@@ -1,0 +1,22 @@
+{
+	"type": "mysticalchemy:potion_ingredient",
+	"item": "iceandfire:dragonscales_silver",
+	"effects": [
+		{
+			"effect": "minecraft:strength",
+			"strength": 0.4
+		},
+		{
+			"effect": "minecraft:resistance",
+			"strength": 0.2
+		},
+		{
+			"effect": "minecraft:instant_damage",
+			"strength": 0.5
+		},
+		{
+			"effect": "magistuarmory:laceration",
+			"strength": 0.5
+		}
+	]
+}

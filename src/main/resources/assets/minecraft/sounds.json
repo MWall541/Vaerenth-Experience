@@ -1,0 +1,11 @@
+{
+  "music.menu": {
+    "replace": true,
+    "sounds": [
+      {
+        "name": "vaerenth_experience:music/menu/dream_of_me",
+        "stream": true
+      }
+    ]
+  }
+}

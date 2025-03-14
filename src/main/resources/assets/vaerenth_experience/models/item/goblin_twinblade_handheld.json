@@ -1,0 +1,6 @@
+{
+	"parent": "dixtas_armory:item/twinblade",
+	"textures": {
+		"layer0" : "vaerenth_experience:item/goblin_twinblade_handheld"
+	}
+}

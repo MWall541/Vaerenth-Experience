@@ -1,0 +1,10 @@
+{
+  "title": {
+    "text": "ADVICE",
+    "bold": true,
+    "color": "blue"
+  },
+  "tip": {
+    "text": "You can set a mount as your favorite with a hotkey, and then use another to summon it to you any time."
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "title": {
+    "text": "ADVICE",
+    "bold": true,
+    "color": "blue"
+  },
+  "tip": {
+    "text": "You can craft a Pet Bed and nudge your pet onto it. If ZZZ particles appear above it, then it will respawn at that bed the morning after it dies."
+  }
+}

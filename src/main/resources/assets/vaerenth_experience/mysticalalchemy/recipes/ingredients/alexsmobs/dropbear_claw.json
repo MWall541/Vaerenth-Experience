@@ -1,0 +1,22 @@
+{
+	"type": "mysticalchemy:potion_ingredient",
+	"item": "alexsmobs:dropbear_claw",
+	"effects": [
+		{
+			"effect": "alexsmobs:clinging",
+			"strength": 0.6
+		},
+		{
+			"effect": "minecraft:strength",
+			"strength": 0.2
+		},
+		{
+			"effect": "tetra:earthbound",
+			"strength": 0.4
+		},
+		{
+			"effect": "upgrade_aquatic:insomnia",
+			"strength": 0.2
+		}
+	]
+}

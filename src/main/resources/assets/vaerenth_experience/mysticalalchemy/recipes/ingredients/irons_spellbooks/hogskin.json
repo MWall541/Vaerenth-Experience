@@ -1,0 +1,15 @@
+{
+	"type": "mysticalchemy:potion_ingredient",
+	"item": "irons_spellbooks:hogskin",
+	"effects": [
+		{
+			"effect": "minecraft:slowness",
+			"strength": 0.4
+		},
+		{
+			"effect": "minecraft:strength",
+			"strength": 0.4
+		}
+	]
+	"duration_added": 300
+}

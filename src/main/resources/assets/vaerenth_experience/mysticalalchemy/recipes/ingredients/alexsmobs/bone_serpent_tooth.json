@@ -1,0 +1,22 @@
+{
+	"type": "mysticalchemy:potion_ingredient",
+	"item": "alexsmobs:bone_serpent_tooth",
+	"effects": [
+		{
+			"effect": "alexsmobs:lava_vision",
+			"strength": 0.5
+		},
+		{
+			"effect": "minecraft:weakness",
+			"strength": 0.3
+		},
+		{
+			"effect": "alexsmobs:oiled",
+			"strength": 0.3
+		},
+		{
+			"effect": "cofh_core:shocked",
+			"strength": 0.4
+		}
+	]
+}

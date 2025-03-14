@@ -1,0 +1,22 @@
+{
+	"type": "mysticalchemy:potion_ingredient",
+	"item": "alexsmobs:acacia_blossom",
+	"effects": [
+		{
+			"effect": "minecraft:instant_health",
+			"strength": 0.4
+		},
+		{
+			"effect": "goblinsanddungeons:might",
+			"strength": 0.2
+		},
+		{
+			"effect": "cofh_core:sundered",
+			"strength": 0.4
+		},
+		{
+			"effect": "upgrade_aquatic:insomnia",
+			"strength": 0.2
+		}
+	]
+}

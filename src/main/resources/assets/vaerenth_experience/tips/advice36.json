@@ -1,0 +1,10 @@
+{
+  "title": {
+    "text": "ADVICE",
+    "bold": true,
+    "color": "blue"
+  },
+  "tip": {
+    "text": "A battleaxe deals massive damage, but swings very slowly and only at close range."
+  }
+}

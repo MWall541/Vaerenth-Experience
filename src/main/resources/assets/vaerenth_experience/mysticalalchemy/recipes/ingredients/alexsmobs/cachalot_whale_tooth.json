@@ -1,0 +1,22 @@
+{
+	"type": "mysticalchemy:potion_ingredient",
+	"item": "alexsmobs:cachalot_whale_tooth",
+	"effects": [
+		{
+			"effect": "minecraft:health_boost",
+			"strength": 0.5
+		},
+		{
+			"effect": "minecraft:night_vision",
+			"strength": 0.3
+		},
+		{
+			"effect": "minecraft:poison",
+			"strength": 0.5
+		},
+		{
+			"effect": "minecraft:unluck",
+			"strength": 0.3
+		}
+	]
+}

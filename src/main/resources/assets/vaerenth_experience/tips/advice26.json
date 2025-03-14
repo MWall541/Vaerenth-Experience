@@ -1,0 +1,10 @@
+{
+  "title": {
+    "text": "ADVICE",
+    "bold": true,
+    "color": "blue"
+  },
+  "tip": {
+    "text": "Greatswords deal less damage than longswords, but you will almost always perform a spin attack with them."
+  }
+}

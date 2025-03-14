@@ -1,0 +1,22 @@
+{
+	"type": "mysticalchemy:potion_ingredient",
+	"item": "alexsmobs:guster_eye",
+	"effects": [
+		{
+			"effect": "minecraft:slow_falling",
+			"strength": 0.4
+		},
+		{
+			"effect": "cofh_core:clarity",
+			"strength": 0.2
+		},
+		{
+			"effect": "cofh_core:shocked",
+			"strength": 0.4
+		},
+		{
+			"effect": "magistuarmory:laceration",
+			"strength": 0.2
+		}
+	]
+}

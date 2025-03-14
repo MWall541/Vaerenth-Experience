@@ -1,0 +1,22 @@
+{
+	"type": "mysticalchemy:potion_ingredient",
+	"item": "alexsmobs:crocodile_scute",
+	"effects": [
+		{
+			"effect": "minecraft:water_breathing",
+			"strength": 0.5
+		},
+		{
+			"effect": "minecraft:speed",
+			"strength": 0.3
+		},
+		{
+			"effect": "minecraft:slowness",
+			"strength": 0.5
+		},
+		{
+			"effect": "minecraft:blindness",
+			"strength": 0.3
+		}
+	]
+}

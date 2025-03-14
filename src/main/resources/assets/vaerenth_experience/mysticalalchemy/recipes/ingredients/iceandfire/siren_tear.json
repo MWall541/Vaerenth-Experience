@@ -1,0 +1,15 @@
+{
+	"type": "mysticalchemy:potion_ingredient",
+	"item": "iceandfire:siren_tear",
+	"effects": [
+		{
+			"effect": "minecraft:conduit_power",
+			"strength": 0.4
+		},
+		{
+			"effect": "minecraft:luck",
+			"strength": 0.4
+		}
+	]
+	"duration_added": 300
+}

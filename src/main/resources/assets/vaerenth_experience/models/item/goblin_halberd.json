@@ -1,0 +1,24 @@
+{
+  "parent": "minecraft:item/handheld",
+  "loader": "forge:separate_transforms",
+  "textures": {
+    "layer0": "vaerenth_experience:item/goblin_halberd_gui"
+  },
+  "base": {
+    "parent": "vaerenth_experience:item/goblin_halberd_gui"
+  },
+  "perspectives": {
+    "thirdperson_righthand": {
+      "parent": "vaerenth_experience:item/goblin_halberd_handheld"
+    },
+    "thirdperson_lefthand": {
+      "parent": "vaerenth_experience:item/goblin_halberd_handheld"
+    },
+    "firstperson_righthand": {
+      "parent": "vaerenth_experience:item/goblin_halberd_handheld"
+    },
+    "firstperson_lefthand": {
+      "parent": "vaerenth_experience:item/goblin_halberd_handheld"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+	"type": "mysticalchemy:potion_ingredient",
+	"item": "iceandfire:amphithere_feather",
+	"effects": [
+		{
+			"effect": "quark:resilience",
+			"strength": 0.4
+		},
+		{
+			"effect": "minecraft:regeneration",
+			"strength": 0.2
+		},
+		{
+			"effect": "minecraft:weakness",
+			"strength": 0.4
+		},
+		{
+			"effect": "minecraft:mining_fatigue",
+			"strength": 0.2
+		}
+	]
+}

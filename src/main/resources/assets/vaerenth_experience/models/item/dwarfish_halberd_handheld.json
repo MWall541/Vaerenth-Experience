@@ -1,0 +1,6 @@
+{
+	"parent": "dixtas_armory:item/halberd",
+	"textures": {
+		"layer0" : "vaerenth_experience:item/dwarfish_halberd_handheld"
+	}
+}

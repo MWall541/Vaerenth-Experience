@@ -1,0 +1,22 @@
+{
+	"type": "mysticalchemy:potion_ingredient",
+	"item": "iceandfire:shiny_scales",
+	"effects": [
+		{
+			"effect": "minecraft:water_breathing",
+			"strength": 0.4
+		},
+		{
+			"effect": "minecraft:resistance",
+			"strength": 0.2
+		},
+		{
+			"effect": "minecraft:instant_damage",
+			"strength": 0.4
+		},
+		{
+			"effect": "minecraft:unluck",
+			"strength": 0.2
+		}
+	]
+}

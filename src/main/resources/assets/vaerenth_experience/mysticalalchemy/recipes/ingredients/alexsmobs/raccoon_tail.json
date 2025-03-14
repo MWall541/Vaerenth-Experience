@@ -1,0 +1,22 @@
+{
+	"type": "mysticalchemy:potion_ingredient",
+	"item": "alexsmobs:raccoon_tail",
+	"effects": [
+		{
+			"effect": "minecraft:instant_health",
+			"strength": 0.4
+		},
+		{
+			"effect": "minecraft:night_vision",
+			"strength": 0.2
+		},
+		{
+			"effect": "minecraft:hunger",
+			"strength": 0.4
+		},
+		{
+			"effect": "upgrade_aquatic:insomnia",
+			"strength": 0.2
+		}
+	]
+}

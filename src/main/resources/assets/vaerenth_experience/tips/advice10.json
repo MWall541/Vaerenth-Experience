@@ -1,0 +1,10 @@
+{
+  "title": {
+    "text": "ADVICE",
+    "bold": true,
+    "color": "blue"
+  },
+  "tip": {
+    "text": "You can add a blank book to any enchanted item in an anvil to move the enchantments onto said book. This will also disenchant the item, however."
+  }
+}

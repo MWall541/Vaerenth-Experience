@@ -1,0 +1,22 @@
+{
+	"type": "mysticalchemy:potion_ingredient",
+	"item": "alexsmobs:rainbow_jelly",
+	"effects": [
+		{
+			"effect": "minecraft:night_vision",
+			"strength": 0.5
+		},
+		{
+			"effect": "upgrade_aquatic:vibing",
+			"strength": 0.5
+		},
+		{
+			"effect": "cofh_core:sundered",
+			"strength": 0.5
+		},
+		{
+			"effect": "minecraft:poison",
+			"strength": 0.3
+		}
+	]
+}

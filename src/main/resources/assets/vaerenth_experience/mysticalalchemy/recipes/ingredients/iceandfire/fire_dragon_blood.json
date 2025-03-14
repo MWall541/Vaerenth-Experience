@@ -1,0 +1,22 @@
+{
+	"type": "mysticalchemy:potion_ingredient",
+	"item": "iceandfire:fire_dragon_blood",
+	"effects": [
+		{
+			"effect": "cofh_core:clarity",
+			"strength": 0.9
+		},
+		{
+			"effect": "minecraft:instant_damage",
+			"strength": 0.8
+		},
+		{
+			"effect": "magistuarmory:laceration",
+			"strength": 0.8
+		},
+		{
+			"effect": "alexsmobs:fear",
+			"strength": 0.8
+		}
+	]
+}

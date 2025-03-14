@@ -1,0 +1,24 @@
+{
+  "parent": "minecraft:item/handheld",
+  "loader": "forge:separate_transforms",
+  "textures": {
+    "layer0": "vaerenth_experience:item/goblin_glaive_gui"
+  },
+  "base": {
+    "parent": "vaerenth_experience:item/goblin_glaive_gui"
+  },
+  "perspectives": {
+    "thirdperson_righthand": {
+      "parent": "vaerenth_experience:item/goblin_glaive_handheld"
+    },
+    "thirdperson_lefthand": {
+      "parent": "vaerenth_experience:item/goblin_glaive_handheld"
+    },
+    "firstperson_righthand": {
+      "parent": "vaerenth_experience:item/goblin_glaive_handheld"
+    },
+    "firstperson_lefthand": {
+      "parent": "vaerenth_experience:item/goblin_glaive_handheld"
+    }
+  }
+}

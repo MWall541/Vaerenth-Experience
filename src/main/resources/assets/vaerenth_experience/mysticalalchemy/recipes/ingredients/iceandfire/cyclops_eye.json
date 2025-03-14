@@ -1,0 +1,15 @@
+{
+	"type": "mysticalchemy:potion_ingredient",
+	"item": "iceandfire:cyclops_eye",
+	"effects": [
+		{
+			"effect": "minecraft:weakness",
+			"strength": 0.6
+		},
+		{
+			"effect": "minecraft:slowness",
+			"strength": 0.6
+		}
+	]
+	"lingering_catalyst": true
+}
