@@ -235,8 +235,8 @@ public class VaerenthExperience
         }
     }
 
-    public static final ResourceKey<Level> DUNGEON_DIM1 = ResourceKey.create(Registries.DIMENSION, new ResourceLocation("dungeon_dim1"));
-    public static final ResourceKey<Level> DUNGEON_DIM2 = ResourceKey.create(Registries.DIMENSION, new ResourceLocation("dungeon_dim2"));
+    public static final ResourceKey<Level> DUNGEON_DIM1 = ResourceKey.create(Registries.DIMENSION, id("dungeon_dim1"));
+    public static final ResourceKey<Level> DUNGEON_DIM2 = ResourceKey.create(Registries.DIMENSION, id("dungeon_dim2"));
 
     public static final DeferredRegister<Block> BLOCK_REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCKS, MODID);
     public static final RegistryObject<Block> DUNGEON_DIM1_PORTAL = BLOCK_REGISTRY.register("dungeon_dim1_portal", () -> new DungeonPortalBlock(DUNGEON_DIM1));
@@ -261,6 +261,11 @@ public class VaerenthExperience
         MinecraftForge.EVENT_BUS.addListener(RevivalStaffItem::interactWithDeadDragon);
         MinecraftForge.EVENT_BUS.addListener(IExtraItemDamage::dealExtraDamage);
         MinecraftForge.EVENT_BUS.addListener(CustomPortalShape::onFlintAndSteel);
+    }
+
+    public static ResourceLocation id(String resource)
+    {
+        return new ResourceLocation(MODID, resource);
     }
 
     private static void addCreativeTabItems(BuildCreativeModeTabContentsEvent event)

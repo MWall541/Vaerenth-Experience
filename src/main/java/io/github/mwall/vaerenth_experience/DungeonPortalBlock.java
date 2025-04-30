@@ -10,8 +10,10 @@ import net.minecraft.world.level.block.NetherPortalBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.dimension.DimensionType;
 import net.minecraft.world.level.material.PushReaction;
+import net.minecraft.world.phys.shapes.BooleanOp;
+import net.minecraft.world.phys.shapes.Shapes;
+import net.minecraftforge.common.util.ITeleporter;
 
 public class DungeonPortalBlock extends NetherPortalBlock
 {
@@ -38,12 +40,15 @@ public class DungeonPortalBlock extends NetherPortalBlock
     @SuppressWarnings("ConstantConditions")
     public void entityInside(BlockState pState, Level pLevel, BlockPos pPos, Entity pEntity)
     {
-        ResourceKey<Level> dimension = pLevel.dimension() == dimensionToTravel? Level.OVERWORLD : dimensionToTravel;
-        pEntity.changeDimension(pLevel.getServer().getLevel(dimension));
+        if (pLevel instanceof ServerLevel server && pEntity.canChangeDimensions() && Shapes.joinIsNotEmpty(Shapes.create(pEntity.getBoundingBox().move(-pPos.getX(), -pPos.getY(), -pPos.getZ())), pState.getShape(pLevel, pPos), BooleanOp.AND))
+        {
+            ResourceKey<Level> dimension = pLevel.dimension() == dimensionToTravel? Level.OVERWORLD : dimensionToTravel;
+            ServerLevel destination = server.getServer().getLevel(dimension);
+            if (destination != null)
+                pEntity.changeDimension(destination, new ITeleporter() {}); // necessary for custom forge changeDim implementation
+        }
     }
 
     @Override
     public void animateTick(BlockState pState, Level pLevel, BlockPos pPos, RandomSource pRandom) {}
-
-
 }

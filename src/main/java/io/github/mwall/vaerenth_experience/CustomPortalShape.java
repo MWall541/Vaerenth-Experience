@@ -87,9 +87,9 @@ public class CustomPortalShape
 
     public static void onFlintAndSteel(PlayerInteractEvent.RightClickBlock e)
     {
-        if (e.getEntity() instanceof ServerPlayer p && p.getItemInHand(e.getHand()).is(Items.FLINT_AND_STEEL))
+        if (e.getEntity() instanceof ServerPlayer p && p.getItemInHand(e.getHand()).is(Items.FLINT_AND_STEEL) && p.getAbilities().instabuild)
         {
-            BlockPos pos = e.getPos().relative(e.getFace().getOpposite());
+            BlockPos pos = e.getPos().relative(e.getFace());
             findEmptyPortalShape(p.level(), pos, Direction.Axis.X, Blocks.REINFORCED_DEEPSLATE, VaerenthExperience.DUNGEON_DIM1_PORTAL.get())
                     .or(() -> findEmptyPortalShape(p.level(), pos, Direction.Axis.X, Blocks.BEDROCK, VaerenthExperience.DUNGEON_DIM2_PORTAL.get()))
                     .ifPresent(CustomPortalShape::createPortalBlocks);
