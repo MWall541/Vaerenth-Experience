@@ -1,0 +1,7 @@
+// 1.20.1	2025-04-29T13:44:03.0606894	Block States: vaerenth_experience
+50309f39481c2b0f03aeae90eecb164eacabec40 assets/vaerenth_experience/blockstates/dungeon_dim1_portal.json
+77040861658688bf430539c5c748491384dc6327 assets/vaerenth_experience/blockstates/dungeon_dim2_portal.json
+0867271cdb4af3bd13686947d094561b38a1c8fe assets/vaerenth_experience/models/block/dungeon_dim1_portal_ew.json
+45177618f151ccf0024cb5ad6c1d7bc9dbd43deb assets/vaerenth_experience/models/block/dungeon_dim1_portal_ns.json
+0867271cdb4af3bd13686947d094561b38a1c8fe assets/vaerenth_experience/models/block/dungeon_dim2_portal_ew.json
+45177618f151ccf0024cb5ad6c1d7bc9dbd43deb assets/vaerenth_experience/models/block/dungeon_dim2_portal_ns.json

@@ -1,8 +1,8 @@
-package io.github.mwall5410.vaerenth_experience.weapons;
+package io.github.mwall.vaerenth_experience.weapons;
 
 import com.github.alexthe666.iceandfire.entity.EntityDragonBase;
 import com.github.alexthe666.iceandfire.entity.EntityDragonPart;
-import io.github.mwall5410.vaerenth_experience.VaerenthExperience;
+import io.github.mwall.vaerenth_experience.VaerenthExperience;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;

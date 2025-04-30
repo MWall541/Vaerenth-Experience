@@ -1,14 +1,8 @@
-package io.github.mwall5410.vaerenth_experience.weapons;
+package io.github.mwall.vaerenth_experience.weapons;
 
-import com.google.common.collect.Multimap;
-import net.dixta.dixtas_armory.item.custom.AdvancedSwordItem;
 import net.dixta.dixtas_armory.item.custom.attributes.*;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
-import net.minecraft.world.entity.EquipmentSlot;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.ai.attributes.Attribute;
-import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.Nullable;

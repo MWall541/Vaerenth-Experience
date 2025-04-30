@@ -1,17 +1,20 @@
-package io.github.mwall5410.vaerenth_experience;
+package io.github.mwall.vaerenth_experience;
 
-import com.github.alexthe666.citadel.server.item.CustomArmorMaterial;
-import io.github.mwall5410.vaerenth_experience.weapons.IExtraItemDamage;
-import io.github.mwall5410.vaerenth_experience.weapons.RevivalStaffItem;
-import io.github.mwall5410.vaerenth_experience.weapons.SwordOfKings;
+import io.github.mwall.vaerenth_experience.data.DataGenProviders;
+import io.github.mwall.vaerenth_experience.weapons.IExtraItemDamage;
+import io.github.mwall.vaerenth_experience.weapons.RevivalStaffItem;
+import io.github.mwall.vaerenth_experience.weapons.SwordOfKings;
 import net.dixta.dixtas_armory.item.custom.AdvancedSwordItem;
 import net.dixta.dixtas_armory.item.custom.attributes.*;
 import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.ai.attributes.Attribute;
 import net.minecraft.world.entity.ai.attributes.RangedAttribute;
 import net.minecraft.world.item.*;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -232,22 +235,35 @@ public class VaerenthExperience
         }
     }
 
+    public static final ResourceKey<Level> DUNGEON_DIM1 = ResourceKey.create(Registries.DIMENSION, new ResourceLocation("dungeon_dim1"));
+    public static final ResourceKey<Level> DUNGEON_DIM2 = ResourceKey.create(Registries.DIMENSION, new ResourceLocation("dungeon_dim2"));
+
+    public static final DeferredRegister<Block> BLOCK_REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCKS, MODID);
+    public static final RegistryObject<Block> DUNGEON_DIM1_PORTAL = BLOCK_REGISTRY.register("dungeon_dim1_portal", () -> new DungeonPortalBlock(DUNGEON_DIM1));
+    public static final RegistryObject<Block> DUNGEON_DIM2_PORTAL = BLOCK_REGISTRY.register("dungeon_dim2_portal", () -> new DungeonPortalBlock(DUNGEON_DIM2));
+
     public static final DeferredRegister<Attribute> ATTRIBUTE_REGISTRY = DeferredRegister.create(ForgeRegistries.ATTRIBUTES, MODID);
     public static final RegistryObject<Attribute> UNDEAD_DAMAGE = ATTRIBUTE_REGISTRY.register("undead.attack_damage", () -> new RangedAttribute("attribute.name.undead.attack_damage", 0, 0, 2048).setSyncable(true));
 
     public VaerenthExperience(FMLJavaModLoadingContext ctx)
     {
         IEventBus modBus = ctx.getModEventBus();
+
         ITEM_REGISTRY.register(modBus);
+        BLOCK_REGISTRY.register(modBus);
         ATTRIBUTE_REGISTRY.register(modBus);
+
         modBus.addListener(VaerenthExperience::setup);
-        modBus.addListener(VaerenthExperience::addCreative);
+        modBus.addListener(VaerenthExperience::addCreativeTabItems);
         modBus.addListener(VaerenthExperience::registryReplace);
+        modBus.addListener(DataGenProviders::register);
+
         MinecraftForge.EVENT_BUS.addListener(RevivalStaffItem::interactWithDeadDragon);
         MinecraftForge.EVENT_BUS.addListener(IExtraItemDamage::dealExtraDamage);
+        MinecraftForge.EVENT_BUS.addListener(CustomPortalShape::onFlintAndSteel);
     }
 
-    private static void addCreative(BuildCreativeModeTabContentsEvent event)
+    private static void addCreativeTabItems(BuildCreativeModeTabContentsEvent event)
     {
         if (event.getTabKey() == CreativeModeTabs.COMBAT)
             for (var item : ITEM_REGISTRY.getEntries())

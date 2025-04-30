@@ -1,4 +1,4 @@
-package io.github.mwall5410.vaerenth_experience.weapons;
+package io.github.mwall.vaerenth_experience.weapons;
 
 import com.google.common.collect.Multimap;
 import net.dixta.dixtas_armory.item.custom.AdvancedSwordItem;

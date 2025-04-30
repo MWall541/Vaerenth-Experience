@@ -13,6 +13,7 @@ plugins {
     id 'eclipse'
     id 'idea'
     id 'net.minecraftforge.gradle' version '[6.0.16,6.2)'
+    id 'org.parchmentmc.librarian.forgegradle' version '1.+'
 }
 
 apply plugin: 'org.spongepowered.mixin'
@@ -88,7 +89,7 @@ minecraft {
             property 'forge.logging.console.level', 'debug'
 
             property 'mixin.env.remapRefMap', 'true'
-            property 'mixin.env.refMapRemappingFile', "${buildDir}/createSrgToMcp/output.srg"
+            property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
 
             mods {
                 "${mod_id}" {
@@ -150,8 +151,8 @@ repositories {
     }
 
     maven {
-        name = "Curios"
-        url = uri("https://maven.theillusivec4.top/")
+        name = "Illusive Soulworks maven"
+        url = "https://maven.theillusivec4.top/"
     }
 
     maven {
@@ -191,11 +192,11 @@ dependencies {
     implementation fg.deobf("software.bernie.geckolib:geckolib-forge-${minecraft_version}:4.7")
     implementation("com.eliotlash.mclib:mclib:20")
 
-    runtimeOnly "top.theillusivec4.curios:curios-forge:5.12.1+${minecraft_version}"
-    compileOnly "top.theillusivec4.curios:curios-forge:5.12.1+${minecraft_version}:api"
+    compileOnly(fg.deobf("top.theillusivec4.curios:curios-forge:${curios_version}+${minecraft_version}:api"))
+    runtimeOnly(fg.deobf("top.theillusivec4.curios:curios-forge:${curios_version}+${minecraft_version}"))
 
-    runtimeOnly "top.theillusivec4.caelus:caelus-forge:3.2.0+${minecraft_version}"
-    compileOnly "top.theillusivec4.caelus:caelus-forge:3.2.0+${minecraft_version}:api"
+    runtimeOnly(fg.deobf("top.theillusivec4.caelus:caelus-forge:${caelus_version}+${minecraft_version}"))
+    compileOnly(fg.deobf("top.theillusivec4.caelus:caelus-forge:${caelus_version}+${minecraft_version}:api"))
 
     implementation fg.deobf("dev.kosmx.player-anim:player-animation-lib-forge:1.0.2-rc1+1.20")
 

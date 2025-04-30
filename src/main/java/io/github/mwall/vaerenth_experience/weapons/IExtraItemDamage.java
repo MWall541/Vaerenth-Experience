@@ -1,8 +1,8 @@
-package io.github.mwall5410.vaerenth_experience.weapons;
+package io.github.mwall.vaerenth_experience.weapons;
 
 import com.google.common.collect.ImmutableMultimap;
 import com.google.common.collect.Multimap;
-import io.github.mwall5410.vaerenth_experience.VaerenthExperience;
+import io.github.mwall.vaerenth_experience.VaerenthExperience;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.ai.attributes.Attribute;

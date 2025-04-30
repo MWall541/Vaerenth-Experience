@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "vaerenth_experience:block/dungeon_dim1_portal_ns"
+    },
+    "axis=z": {
+      "model": "vaerenth_experience:block/dungeon_dim1_portal_ew"
+    }
+  }
+}

@@ -1,4 +1,4 @@
-package io.github.mwall5410.vaerenth_experience;
+package io.github.mwall.vaerenth_experience;
 
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.ItemStack;
