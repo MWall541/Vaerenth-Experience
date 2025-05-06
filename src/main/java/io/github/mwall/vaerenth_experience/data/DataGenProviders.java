@@ -16,5 +16,6 @@ public class DataGenProviders
         boolean client = event.includeClient();
 
         gen.addProvider(client, new BlockModelGen(output, helper));
+        gen.addProvider(client, new ItemModelGen(output, helper));
     }
 }

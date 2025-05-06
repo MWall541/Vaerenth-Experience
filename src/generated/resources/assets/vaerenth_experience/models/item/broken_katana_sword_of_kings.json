@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "vaerenth_experience:item/broken_katana_sword_of_kings"
+  }
+}

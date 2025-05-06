@@ -1,0 +1,14 @@
+{
+  "parent": "dixtas_armory:item/handheld_2x",
+  "overrides": [
+    {
+      "model": "vaerenth_experience:item/broken_longsword_sword_of_kings",
+      "predicate": {
+        "vaerenth_experience:broken": 1.0
+      }
+    }
+  ],
+  "textures": {
+    "layer0": "vaerenth_experience:item/longsword_sword_of_kings"
+  }
+}

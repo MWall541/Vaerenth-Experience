@@ -230,9 +230,7 @@ public class VaerenthExperience
                 "copper_glari",
                 "bronze_tel",
                 "bronze_glaong"})
-        {
             ITEM_REGISTRY.register(coin, () -> new Item(new Item.Properties().stacksTo(64)));
-        }
     }
 
     public static final ResourceKey<Level> DUNGEON_DIM1 = ResourceKey.create(Registries.DIMENSION, id("dungeon_dim1"));

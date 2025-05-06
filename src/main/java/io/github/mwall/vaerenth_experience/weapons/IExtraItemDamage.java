@@ -38,8 +38,12 @@ public interface IExtraItemDamage
     {
         if (evt.getSource().getEntity() instanceof LivingEntity l && l.getMainHandItem().getItem() instanceof IExtraItemDamage e)
         {
-            evt.setAmount(evt.getAmount() + e.getAdditionalHurtDamage(l.getMainHandItem(), l, evt.getEntity()));
-            if (l instanceof Player p) p.magicCrit(evt.getEntity());
+            float extra = e.getAdditionalHurtDamage(l.getMainHandItem(), l, evt.getEntity());
+            if (extra != 0)
+            {
+                evt.setAmount(evt.getAmount() + extra);
+                if (l instanceof Player p) p.magicCrit(evt.getEntity());
+            }
         }
     }
 }
