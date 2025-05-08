@@ -24,13 +24,14 @@ These features are in the 1.18 version, need them ported:
 
 [ ] The purple dragon skin for Zeslin which only Zyranna can unlock
 
-[ ] A Broken state for all unique weapons instead of breaking. Currently, this only includes the Sword of Kings, but more will come.
+[-] A Broken state for all unique weapons instead of breaking. Currently, this only includes the Sword of Kings, but more will come.
+    __Needs Textures__
 
 [x] The Sword of Kings, but do three versions: One's a longsword, one's a greatsword, and one is a katana. Use the same sprite for each and make sure all three versions deal +1 damage against undead, like silver weapons do. Use a subtitle to differentiate:  
     [x] Longsword: You defeated the shade of King Arcturus and took this legendary sword from him. Wield it faithfully and it will serve you well.  
-    [x] Greatsword:  You defeated the shade of King Arcturus and took this legendary sword from him. It's very heavy and lends itself well to spinning attacks.  
+    [x] Greatsword: You defeated the shade of King Arcturus and took this legendary sword from him. It's very heavy and lends itself well to spinning attacks.  
     [x] Katana: You defeated the shade of King Arcturus and took this legendary sword from him. The swordmasters of Tsukiyo have taught you their way of wielding a blade like this.  
 
-[ ] The Vaerenthian Shield (Give this like 20000 durability while you're at it)
-
+[-] The Vaerenthian Shield (Give this like 20000 durability while you're at it)
+    __Needs proper json model as opposed to obj. Game is rendering materials wrong.__
 [x] The coins for each region; also a copper glass needs a crafting recipe to turn one glass into two half-glasses, and vice versa.z

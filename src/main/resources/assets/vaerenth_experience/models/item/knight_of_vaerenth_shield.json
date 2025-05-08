@@ -48,7 +48,7 @@
       "predicate": {
         "blocking": 1
       },
-      "model": "vaerenth_experience:item/shield_blocking"
+      "model": "vaerenth_experience:item/knight_of_vaerenth_shield_blocking"
     }
   ]
 }

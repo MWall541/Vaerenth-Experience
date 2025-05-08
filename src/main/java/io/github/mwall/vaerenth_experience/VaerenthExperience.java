@@ -3,6 +3,7 @@ package io.github.mwall.vaerenth_experience;
 import io.github.mwall.vaerenth_experience.data.DataGenProviders;
 import io.github.mwall.vaerenth_experience.weapons.IExtraItemDamage;
 import io.github.mwall.vaerenth_experience.weapons.RevivalStaffItem;
+import io.github.mwall.vaerenth_experience.weapons.SilverAdvancedWeaponry;
 import io.github.mwall.vaerenth_experience.weapons.SwordOfKings;
 import net.dixta.dixtas_armory.item.custom.AdvancedSwordItem;
 import net.dixta.dixtas_armory.item.custom.attributes.*;
@@ -26,6 +27,8 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegisterEvent;
 import net.minecraftforge.registries.RegistryObject;
 
+import java.util.function.Function;
+
 @Mod(VaerenthExperience.MODID)
 public class VaerenthExperience
 {
@@ -41,6 +44,34 @@ public class VaerenthExperience
     public static final RegistryObject<Item> KNIGHT_OF_VAERENTH_SHIELD = ITEM_REGISTRY.register("knight_of_vaerenth_shield", () -> new ShieldItem((new Item.Properties()).durability(20000)));
 
     public static final RegistryObject<Item> REVIVAL_STAFF = ITEM_REGISTRY.register("revival_staff", () -> new RevivalStaffItem((new Item.Properties()).durability(1).rarity(Rarity.EPIC)));
+
+    public static final RegistryObject<Item> SILVER_DAGGER = registerSilverSwordLike("silver_dagger", 3.5f, 3.5f, 1.8f, new AttackAttribute(0, 0, 0, 0, 5, 0, 0), TwoHandedAttribute.none, new SweepAttribute(true, 1, 0.25f));
+
+    public static final RegistryObject<Item> SILVER_SHORTSWORD = registerSilverSwordLike("silver_shortsword", 5.3f, 2.2f, 2.25f, AttackAttribute.none, TwoHandedAttribute.none, new SweepAttribute(true, 1, 0.75f));
+
+    public static final RegistryObject<Item> SILVER_STILETTO = registerSilverSwordLike("silver_stiletto", 3.6f, 2.5f, 2f, new AttackAttribute(0, 0.25f, 3f, 0, 7, 0, 0), TwoHandedAttribute.none, SweepAttribute.normal);
+
+    public static final RegistryObject<Item> SILVER_RAPIER = registerSilverSwordLike("silver_rapier", 4f, 2f, 3f, new AttackAttribute());
+
+    public static final RegistryObject<Item> SILVER_KATANA = registerSilverSwordLike("silver_katana", );
+
+    public static final RegistryObject<Item> SILVER_GREATSWORD = registerSilverSwordLike("silver_greatsword", );
+
+    public static final RegistryObject<Item> SILVER_LONGSWORD = registerSilverSwordLike("silver_longsword", );
+
+    public static final RegistryObject<Item> SILVER_TWINBLADE = registerSilverSwordLike("silver_twinblade", );
+
+    public static final RegistryObject<Item> SILVER_ZWEIHANDER = registerSilverSwordLike("silver_zweihander", );
+
+//    public static final RegistryObject<Item> SILVER_BATTLEAXE = registerSilverSwordLike("silver_battle_axe", () );
+
+    public static final RegistryObject<Item> SILVER_GLAIVE = registerSilverSwordLike("silver_glaive", );
+
+    public static final RegistryObject<Item> SILVER_SPEAR = registerSilverSwordLike("silver_spear", );
+
+    public static final RegistryObject<Item> SILVER_HALBERD = registerSilverSwordLike("silver_halberd", );
+
+    public static final RegistryObject<Item> SILVER_PIKE = registerSilverSwordLike("silver_pike", );
 
     public static final RegistryObject<Item> GREYELF_DAGGER = ITEM_REGISTRY.register("greyelf_dagger", () -> new AdvancedSwordItem(new WeaponProperty(Tiers.DIAMOND, 0, 3.5F, (new Item.Properties()), 1.8f, new AttackAttribute(0.0F, 0.0F, 0.0F, 0.0F, 15, 0.0F, 0.0F), TwoHandedAttribute.none, new SweepAttribute(true, 1.0F, 0.25F), ThrownWeaponAttribute.none, false), -1));
 
@@ -243,6 +274,20 @@ public class VaerenthExperience
     public static final DeferredRegister<Attribute> ATTRIBUTE_REGISTRY = DeferredRegister.create(ForgeRegistries.ATTRIBUTES, MODID);
     public static final RegistryObject<Attribute> UNDEAD_DAMAGE = ATTRIBUTE_REGISTRY.register("undead.attack_damage", () -> new RangedAttribute("attribute.name.undead.attack_damage", 0, 0, 2048).setSyncable(true));
 
+    private static RegistryObject<Item> registerWeapon(Function<WeaponProperty, Item> factory, String name, Tier tier, float damage, float speed, float range, AttackAttribute attackAtt, TwoHandedAttribute twoHandedAtt, SweepAttribute sweepAtt)
+    {
+        return ITEM_REGISTRY.register(name, () -> factory.apply(new WeaponProperty(tier, damage, speed, new Item.Properties(), range, attackAtt, twoHandedAtt, sweepAtt, ThrownWeaponAttribute.none, false)));
+    }
+
+    private static RegistryObject<Item> registerSwordLike(String name, Tier tier, float damage, float speed, float range, AttackAttribute attackAtt, TwoHandedAttribute twoHandedAtt, SweepAttribute sweepAtt)
+    {
+        return registerWeapon(w -> new AdvancedSwordItem(w, -1), name, tier, damage, speed, range, attackAtt, twoHandedAtt, sweepAtt);
+    }
+
+    private static RegistryObject<Item> registerSilverSwordLike(String name, float damage, float speed, float range, AttackAttribute attackAtt, TwoHandedAttribute twoHandedAtt, SweepAttribute sweepAtt)
+    {
+        return registerWeapon(SilverAdvancedWeaponry::new, name, Tiers.IRON, damage, speed, range, attackAtt, twoHandedAtt, sweepAtt);
+    }
     public VaerenthExperience(FMLJavaModLoadingContext ctx)
     {
         IEventBus modBus = ctx.getModEventBus();
