@@ -1,4 +1,4 @@
-package io.github.mwall.vaerenth_experience;
+package io.github.mwall.vaerenth_experience.block;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.resources.ResourceKey;

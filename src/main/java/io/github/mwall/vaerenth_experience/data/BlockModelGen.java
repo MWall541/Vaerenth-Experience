@@ -4,6 +4,7 @@ import io.github.mwall.vaerenth_experience.VaerenthExperience;
 import net.minecraft.core.Direction;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.NetherPortalBlock;
@@ -21,27 +22,41 @@ public class BlockModelGen extends BlockStateProvider
     @Override
     protected void registerStatesAndModels()
     {
-        portal(VaerenthExperience.DUNGEON_DIM1_PORTAL.get(), Blocks.SPRUCE_TRAPDOOR);
-        portal(VaerenthExperience.DUNGEON_DIM2_PORTAL.get(), Blocks.SPRUCE_TRAPDOOR);
+        portal(VaerenthExperience.DUNGEON_DIM1_PORTAL.get());
+        portal(VaerenthExperience.DUNGEON_DIM2_PORTAL.get());
+        trophy(VaerenthExperience.COPPER_TROPHY.get(), false);
+        trophy(VaerenthExperience.SILVER_TROPHY.get(), false);
+        trophy(VaerenthExperience.GOLD_TROPHY.get(), true);
     }
 
-    private void portal(Block block, Block texture)
+    private void trophy(Block trophy, boolean rearing)
+    {
+        ResourceLocation key = BuiltInRegistries.BLOCK.getKey(trophy);
+        ResourceLocation model = VaerenthExperience.id("block/" + (rearing? "rearing_trophy" : "trophy"));
+        ResourceLocation texture = VaerenthExperience.id("block/" + key.getPath());
+
+        horizontalBlock(trophy, models().withExistingParent(key.getPath(), model)
+                .texture("0", texture)
+                .texture("particle", texture));
+    }
+
+    private void portal(Block block)
     {
         getVariantBuilder(block)
                 .partialState()
                 .with(NetherPortalBlock.AXIS, Direction.Axis.X)
-                .addModels(buildPortalModel("ns", block, texture))
+                .addModels(buildPortalModel("ns", block))
                 .partialState()
                 .with(NetherPortalBlock.AXIS, Direction.Axis.Z)
-                .addModels(buildPortalModel("ew", block, texture));
+                .addModels(buildPortalModel("ew", block));
     }
 
-    private ConfiguredModel[] buildPortalModel(String postfix, Block block, Block texture)
+    private ConfiguredModel[] buildPortalModel(String postfix, Block block)
     {
         return ConfiguredModel.builder().modelFile(
                         models()
                                 .withExistingParent(BuiltInRegistries.BLOCK.getKey(block).getPath() + "_" + postfix, "minecraft:block/nether_portal_" + postfix)
-                                .texture("portal", blockTexture(texture)))
+                                .texture("portal", blockTexture(Blocks.SPRUCE_TRAPDOOR)))
                 .build();
     }
 }

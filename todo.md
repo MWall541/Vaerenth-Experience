@@ -6,7 +6,7 @@ New additions:
 
 [ ] The black and gold lightning dragon variants (In-game: Voidstorm and Aurelian, respectively), plus their eggs.
 
-[ ] The three jousting trophies, with the rearing model only being used for the gold texture
+[x] The three jousting trophies, with the rearing model only being used for the gold texture
 
 [x] A void dimension with absolutely nothing in it; portal frame made from reinforced deepslate and ignited with a flint and steel but ONLY by a player in creative mode or /op, whichever's easiest. If you have a better way of going about this, like a custom uncraftable block or sometthing, I'm flexible. Also, Use the spruce trapdoor texture for the portal blocks so that it looks like doors.
 

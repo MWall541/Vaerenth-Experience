@@ -15,7 +15,7 @@ public class SwordOfKings extends SilverAdvancedWeaponry
 {
     public SwordOfKings()
     {
-        super(new WeaponProperty(Tiers.DIAMOND, 4, 1.2F, new Item.Properties().rarity(Rarity.UNCOMMON), 3.5f, new AttackAttribute(0.0F, 0.0F, 0.0F, 0.0F, 20, 0.0F, 0.0F), new TwoHandedAttribute(2, 0, 6, 0.0F, 0.4F), new SweepAttribute(true, 5.0F, 1.5F), ThrownWeaponAttribute.none, false));
+        super(new WeaponProperty(Tiers.DIAMOND, 4, 1.2F, new Item.Properties().rarity(Rarity.UNCOMMON), 3.5f, new AttackAttribute(0.0F, 0.0F, 0.0F, 0.0F, 20, 0.0F, 0.0F, 0, false, 0), new TwoHandedAttribute(2, 0, 6, 0.0F, 0.4F), new SweepAttribute(true, 5.0F, 1.5F), ThrownWeaponAttribute.none, false));
     }
 
     @Override

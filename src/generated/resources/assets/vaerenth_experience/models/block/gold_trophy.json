@@ -1,0 +1,7 @@
+{
+  "parent": "vaerenth_experience:block/rearing_trophy",
+  "textures": {
+    "0": "vaerenth_experience:block/gold_trophy",
+    "particle": "vaerenth_experience:block/gold_trophy"
+  }
+}

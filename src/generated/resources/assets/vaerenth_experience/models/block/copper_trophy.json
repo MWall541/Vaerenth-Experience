@@ -1,0 +1,7 @@
+{
+  "parent": "vaerenth_experience:block/trophy",
+  "textures": {
+    "0": "vaerenth_experience:block/copper_trophy",
+    "particle": "vaerenth_experience:block/copper_trophy"
+  }
+}

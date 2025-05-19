@@ -1,7 +1,10 @@
-// 1.20.1	2025-05-06T15:23:49.6924332	Item Models: vaerenth_experience
+// 1.20.1	2025-05-19T14:59:41.2381334	Item Models: vaerenth_experience
 db42f16fafbc8f8f17831121cd89338d0b3be07b assets/vaerenth_experience/models/item/broken_greatsword_sword_of_kings.json
 35eea5a4792c92e3d87b0d92e870b341a905e477 assets/vaerenth_experience/models/item/broken_katana_sword_of_kings.json
 d956c950bec108af8ba9118140dd03fe0249f1f1 assets/vaerenth_experience/models/item/broken_longsword_sword_of_kings.json
+f995721e49fac8e747dca4380dc1060a14784241 assets/vaerenth_experience/models/item/copper_trophy.json
+e14b3c647c14ca8aeee291be557227e1765d34f3 assets/vaerenth_experience/models/item/gold_trophy.json
 c4a091a07d71244dde0c65976536797836edf651 assets/vaerenth_experience/models/item/greatsword_sword_of_kings.json
 c799d7ab50858ed1c0b650214455a7b02c61302b assets/vaerenth_experience/models/item/katana_sword_of_kings.json
 f60af6195293368c4e0e36f8bce5044592a64f48 assets/vaerenth_experience/models/item/longsword_sword_of_kings.json
+acc93139997ce7263b595ad1cea0d4bb2531c989 assets/vaerenth_experience/models/item/silver_trophy.json

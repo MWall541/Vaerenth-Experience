@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "vaerenth_experience:block/silver_trophy",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "vaerenth_experience:block/silver_trophy"
+    },
+    "facing=south": {
+      "model": "vaerenth_experience:block/silver_trophy",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "vaerenth_experience:block/silver_trophy",
+      "y": 270
+    }
+  }
+}
