@@ -160,11 +160,9 @@ repositories {
         url 'https://maven.kosmx.dev/'
     }
 
-    // If you have mod jar dependencies in ./libs, you can declare them as a repository like so.
-    // See https://docs.gradle.org/current/userguide/declaring_repositories.html#sub:flat_dir_resolver
-     flatDir {
-         dir 'libs'
-     }
+    maven {
+        url = "https://api.modrinth.com/maven"
+    }
 }
 
 dependencies {
@@ -184,12 +182,13 @@ dependencies {
     // Example mod dependency using a mod jar from ./libs with a flat dir repository
     // This maps to ./libs/coolmod-${mc_version}-${coolmod_version}.jar
     // The group id is ignored when searching -- in this case, it is "blank"
-    implementation fg.deobf("blank:dixtas_armory-1.1.9:${minecraft_version}-beta")
-    implementation fg.deobf("blank:iceandfire-2.1.13:${minecraft_version}-beta-5")
-    implementation fg.deobf("blank:citadel-2.6.1:${minecraft_version}")
-    implementation fg.deobf("blank:irons_spellbooks-${minecraft_version}:3.4.0.7")
 
-    implementation fg.deobf("software.bernie.geckolib:geckolib-forge-${minecraft_version}:4.7")
+    implementation fg.deobf("maven.modrinth:citadel:${citadel_version}")
+    implementation fg.deobf("maven.modrinth:ice-and-fire-dragons:${ice_and_fire_version}")
+    implementation fg.deobf("maven.modrinth:dixtas-armory:${dixtas_armory_version}-${minecraft_version}")
+    implementation fg.deobf("maven.modrinth:irons-spells-n-spellbooks:${minecraft_version}-${irons_spellbooks_version}")
+
+    implementation fg.deobf("software.bernie.geckolib:geckolib-forge-${minecraft_version}:${gecko_lib_version}")
     implementation("com.eliotlash.mclib:mclib:20")
 
     compileOnly(fg.deobf("top.theillusivec4.curios:curios-forge:${curios_version}+${minecraft_version}:api"))
@@ -198,7 +197,7 @@ dependencies {
     runtimeOnly(fg.deobf("top.theillusivec4.caelus:caelus-forge:${caelus_version}+${minecraft_version}"))
     compileOnly(fg.deobf("top.theillusivec4.caelus:caelus-forge:${caelus_version}+${minecraft_version}:api"))
 
-    implementation fg.deobf("dev.kosmx.player-anim:player-animation-lib-forge:1.0.2-rc1+1.20")
+    implementation fg.deobf("dev.kosmx.player-anim:player-animation-lib-forge:${player_animation_lib_version}")
 
     // For more info:
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
