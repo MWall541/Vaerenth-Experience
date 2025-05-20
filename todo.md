@@ -31,6 +31,6 @@ These features are in the 1.18 version, need them ported:
     [x] Greatsword:  You defeated the shade of King Arcturus and took this legendary sword from him. It's very heavy and lends itself well to spinning attacks.  
     [x] Katana: You defeated the shade of King Arcturus and took this legendary sword from him. The swordmasters of Tsukiyo have taught you their way of wielding a blade like this.  
 
-[ ] The Vaerenthian Shield (Give this like 20000 durability while you're at it)
+[x] The Vaerenthian Shield (Give this like 20000 durability while you're at it)
 
 [x] The coins for each region; also a copper glass needs a crafting recipe to turn one glass into two half-glasses, and vice versa.z

@@ -1,0 +1,21 @@
+{
+	"parent": "vaerenth_experience:item/knight_of_vaerenth_shield",
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [ 45, -45, 0 ],
+			"translation": [ 1.5, -2, 0 ]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [ 45, -45, 0 ],
+			"translation": [ 1.5, -2, 0 ]
+		},
+		"firstperson_righthand": {
+			"rotation": [ 0, 0, 5 ],
+			"translation": [ -4, 1.5, -2 ]
+		},
+		"firstperson_lefthand": {
+			"rotation": [ 0, 0, 5 ],
+			"translation": [ -4, 1.5, -2 ]
+		}
+	}
+}
